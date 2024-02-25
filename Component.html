@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a id="logo_name" class="navbar-brand" href="Main_page.html"><img id="LOGO" src="images/LOGO.png"
+                    alt="wait for loading">TAGLINE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="link_1" class="nav-link" aria-current="page" href="Description.html">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link_2" class="nav-link" href="Component.html">Component</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link_3" class="nav-link" href="Final_design.html">Final design</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="main_carousel_container">
+        <div id="container_1" class="col-md-12 ">
+            <div id="carousel_1" class="carousel slide">
+                <div id="images_carousel_1" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/NodeMCU.png" class="d-block w-100" alt="Wait For Loading...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/NodeMCU_2.png" class="d-block w-100" alt="Wait For Loading...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_1" data-bs-slide="next">
+                    <span  class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span></button>
+            </div>
+            <p id="p_container_1"><a id="NodeMCU_reference" href="https://en.wikipedia.org/wiki/NodeMCU">NodeMCU</a> is
+                an
+                open-source firmware and also a development board specially made for IoT-based usage and applications.
+                <br>
+                It includes firmware that runs on the ESP8266 Wi-Fi SoC from Espressif Systems, flexible usage, and
+                works on
+                5volt. <br>
+                NodeMCU has 128 KB RAM and 4MB of Flash memory to store data. <br>
+                This board supports RTOS and operation at 80MHz to 160 MHz adjustable clock frequency. <br>
+                Its high processing power with in-built Wi-Fi / Bluetooth makes it ideal for IoT applications.<br><br>
+                The NEO-6MV2 is a GPS (Global Positioning System) module that is used for navigation and fetching the
+                current
+                location. <br>
+                This module provides its location on earth and gives its output which is the longitude and latitude of
+                its
+                current position. <br>
+                This position can be seen over the web using the IP address or via a mobile application.
+            </p>
+        </div>
+
+        <div id="container_2">
+            <div id="carousel_2" class="carousel slide">
+                <div id="images_carousel_2" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/circuit diagram.png" class="d-block w-100" alt="Wait For Loading...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1-removebg-preview.png" class="d-block w-100" alt="Wait For Loading...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span></button>
+            </div>
+            <p id="p_container_2">
+                In the above circuit diagram, Vcc is connected to the 3v3 pin of the NodeMCU board. <br>
+                The GND pin is connected to GND. The D1 pin of the NodeMCU board is connected to the RX pin of the GPS
+                module. <br>
+                Similarly, the D2 pin of the NodeMCU board is connected to the TX pin of the GPS module.<br>
+                <b>Power</b>
+
+                Micro-USB, 3.3V, GND, Vin
+                Micro-USB port: NodeMCU is powered through the USB port
+                3.3V: 3.3V can be supplied to this pin to power the NodeMCU
+                <b>GND</b> round pin<br> <b>Vin</b> External Power Supply<br> <b>Control Pins</b>EN, RST
+                The pin and the button resets the board<br>
+                <b>Analog Pin</b>
+                A0
+                Used to measure analog voltage in the range of 0-3.3V<br>
+                <b>GPIO Pins</b>
+                GPIO1 to GPIO16
+                NodeMCU has 16 general purpose input-output pins.<br>
+                <b>SPI Pins</b>
+                SD1, CMD, SD0, CLK
+                NodeMCU has 4 pins available for SPI communication.<br>
+                <b>UART Pins</b>
+                TXD0, RXD0, TXD2, RXD2
+                NodeMCU has two UART interfaces, UART0 (RXD0 & TXD0) and UART1 (RXD1 & TXD1). UART1 is used to upload the firmware or program.<br>
+                <b>I2C Pins</b>
+                NodeMCU has I2C functionality support but due to the internal functionality of these pins, you have to find which pin is I2C.</p>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
